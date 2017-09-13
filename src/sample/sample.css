@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: #183445;
+}
+.label {
+    -fx-font: bold 20px;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+
+}
+.custom-button {
+    -fx-font: bold 16px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #7ac5cd;
+}
+#welcomeText{
+  -fx-fill: FIREBRICK;
+  -fx-font-size: 30px;
+  -fx-alignment: CENTER;
+     -fx-font-family: "Arial Black";
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}

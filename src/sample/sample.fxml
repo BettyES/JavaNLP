@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane fx:controller="sample.SampleController"
+          stylesheets="/sample/sample.css"
+          xmlns:fx="http://javafx.com/fxml"  hgap="10" vgap="10" >
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+    <Text text="NLP with Java" id="welcomeText"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+
+    <Label text="Enter your text here:"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField onAction="#getWords" fx:id="test"
+            GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Button text="get words" onAction="#getWords"
+            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label
+            GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="getWords"/>
+
+    <Button text="count words" onAction="#countWords"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label
+            GridPane.columnIndex="2" GridPane.rowIndex="3"  fx:id="countWords"/>
+
+
+</GridPane>
