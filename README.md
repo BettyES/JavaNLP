@@ -19,6 +19,8 @@ Also, I recommend using IntelliJ as an IDE.
 
 There's currently a very simple GUI implementation. Fire up your IntelliJ IDE (import project) and simply run the main method of the program. The GUI should be self explanatory.
 
+Currently, one should enter the path and filename to a textfile (e.g. data/ada.txt)
+
 #### Running the tests
 
 There is currently no implementation of a test suit for this program. Feel free to add some.
