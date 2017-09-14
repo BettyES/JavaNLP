@@ -116,3 +116,7 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/java,macos,intellij
 
+*.jpg
+*.png
+*.pdf
+*.jpeg

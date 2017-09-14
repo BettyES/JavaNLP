@@ -19,11 +19,17 @@
           GridPane.columnIndex="0" GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label text="Enter your text here:"
+    <Label text="Enter file path:"
            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
     <TextField onAction="#getWords" fx:id="test"
             GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Button text="get Text" onAction="#getText"
+            GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+    <Label
+            GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="getText"/>
 
     <Button text="get words" onAction="#getWords"
             GridPane.columnIndex="1" GridPane.rowIndex="2"/>

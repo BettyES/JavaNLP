@@ -16,6 +16,6 @@
   -fx-fill: FIREBRICK;
   -fx-font-size: 30px;
   -fx-alignment: CENTER;
-     -fx-font-family: "Arial Black";
-   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+  -fx-font-family: "Arial Black";
+  -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }

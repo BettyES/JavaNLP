@@ -1,18 +1,29 @@
 package sample;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.BreakIterator;
 import java.util.Locale;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
+import org.apache.commons.io.FileUtils;
 
 /**
  * Created by betty.schirrmeister on 13/09/2017.
  */
 public class NLP {
 
-   /** public static void main(String[] args){
-        String input = "Tophy and Betty are very much in super-love! Tophy's and Betty's favourite drink is beer.";
+   public static void main(String[] args) {
+
+       String myText = readFile("data/ada.txt");
+       System.out.println(myText);
+
+
+       /**String input = "Tophy and Betty are very much in super-love! Tophy's and Betty's favourite drink is beer.";
         String sentence = "My name is Betty Schirrmeister. You may use Dr. before my name, as I have a PhD. I am, however a bit shy to use it.";
         NLP worddetec = new NLP();
         worddetec.useTokenizer(input);
@@ -20,12 +31,27 @@ public class NLP {
         worddetec.useRegex(input);
 
         NLP sentencedetec = new NLP();
-        sentencedetec.useSentenceIterator(sentence);
-    }*/
+        sentencedetec.useSentenceIterator(sentence);*/
+   }
+
+   public static String readFile(String name){
+       File file = new File(name);
+       String myText;
+       myText = null;
+       try {
+           myText = FileUtils.readFileToString(file, "UTF-8");
+       } catch (IOException e) {
+           System.out.println("Error reading" + file.getAbsolutePath());
+       }
+       return myText;
+   }
+
+
 
     public String getWords(String input){
        return useTokenizer(input,1) ;
     }
+
     public String countWords(String input){
         return useTokenizer(input,2) ;
     }
