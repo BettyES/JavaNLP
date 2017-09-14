@@ -32,7 +32,11 @@ There is currently no implementation of a test suit for this program. Feel free 
 Feel free to contribute ideas, improvements or new features to this app. The way I see it, there is much room for improvement and extensions.
 Methods are stored in the class JavaNLP/sample/src/NLP.java 
 
+### Acknowledgement
+
+Many methods are based on R.Shams, "Java data Science Cookbook" 2017 (Packt)
+
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. 
 
