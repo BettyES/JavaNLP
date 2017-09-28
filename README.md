@@ -15,6 +15,10 @@ Also, I recommend using IntelliJ as an IDE.
 
 [How do I install IntelliJ ?](https://www.jetbrains.com/help/idea/installing-and-launching.html)
 
+Adding apache.commons.io library to external:
+1. Download library from https://commons.apache.org/proper/commons-io/download_io.cgi to any folder you fancy
+2. In intelliJ click on external libraries -> library Settings -> Global libraries -> + -> browse for the apache.commons...jar file and add
+
 #### Running the APP
 
 There's currently a very simple GUI implementation. Fire up your IntelliJ IDE (import project) and simply run the main method of the program. The GUI should be self explanatory.
